@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main_window_icon.png</file>
+        <file>color_changer_icon.png</file>
+    </qresource>
+</RCC>
