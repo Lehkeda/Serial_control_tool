@@ -10,7 +10,7 @@ QT += serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = serial
+TARGET = serial control tool
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -33,7 +33,9 @@ HEADERS  += mainwindow.h \
     color_brightness_changer.h
 
 FORMS    += mainwindow.ui \
-    led_brightness_changer.ui
+    color_brightness_changer.ui
 
 RESOURCES += \
     resources.qrc
+
+RC_FILE = app_icon.rc
