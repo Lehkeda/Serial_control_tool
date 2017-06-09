@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>led_brightness_changer</class>
- <widget class="QDialog" name="led_brightness_changer">
+ <class>color_brightness_changer</class>
+ <widget class="QDialog" name="color_brightness_changer">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -36,7 +36,7 @@
       <enum>QSlider::TicksBothSides</enum>
      </property>
      <property name="tickInterval">
-      <number>1</number>
+      <number>5</number>
      </property>
     </widget>
    </item>
@@ -64,7 +64,7 @@
       <enum>QSlider::TicksBothSides</enum>
      </property>
      <property name="tickInterval">
-      <number>1</number>
+      <number>5</number>
      </property>
     </widget>
    </item>
@@ -104,7 +104,7 @@
       <enum>QSlider::TicksBothSides</enum>
      </property>
      <property name="tickInterval">
-      <number>1</number>
+      <number>5</number>
      </property>
     </widget>
    </item>
@@ -122,6 +122,12 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>red_slider</tabstop>
+  <tabstop>blue_slider</tabstop>
+  <tabstop>green_slider</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources>
   <include location="resources.qrc"/>
  </resources>
@@ -129,7 +135,7 @@
   <connection>
    <sender>pushButton</sender>
    <signal>clicked()</signal>
-   <receiver>led_brightness_changer</receiver>
+   <receiver>color_brightness_changer</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
