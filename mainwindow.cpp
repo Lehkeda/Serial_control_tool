@@ -27,7 +27,7 @@ void MainWindow::get_ports(){
     QList<QSerialPortInfo> ports = port_info.availablePorts();
     QString txt="<font color=blue> <b>Ports</b> :<br/>";
     for(int i=0; i < ports.count(); ++i){
-        txt.append(ports.at(i).portName().append(" - ").append(ports.at(i).description()) );
+        txt.append(ports.at(i).portName().append(" - ").append(ports.at(i).description()).append("<br/>") );
     }
     txt.append("</font>");
     ui->output->append(txt);

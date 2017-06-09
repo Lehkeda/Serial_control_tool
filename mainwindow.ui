@@ -55,7 +55,13 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="baud_rates"/>
+       <widget class="QComboBox" name="baud_rates">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -188,7 +194,7 @@
      <widget class="QTextBrowser" name="output">
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <pointsize>10</pointsize>
        </font>
       </property>
      </widget>
@@ -230,6 +236,18 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>port_name</tabstop>
+  <tabstop>baud_rates</tabstop>
+  <tabstop>get_ports</tabstop>
+  <tabstop>open_port</tabstop>
+  <tabstop>change_baudRate</tabstop>
+  <tabstop>read_serial</tabstop>
+  <tabstop>user_input</tabstop>
+  <tabstop>write_to_serial</tabstop>
+  <tabstop>close_port</tabstop>
+  <tabstop>output</tabstop>
+ </tabstops>
  <resources>
   <include location="resources.qrc"/>
  </resources>
